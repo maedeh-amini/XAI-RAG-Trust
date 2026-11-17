@@ -1,0 +1,38 @@
+
+	Shapiro-Wilk normality test
+
+data:  residuals(basic_lm)
+W = 0.97613, p-value = 8.131e-06
+
+Levene's Test for Homogeneity of Variance (center = median)
+       Df F value  Pr(>F)  
+group   3  2.7854 0.04068 *
+      368 
+      
+                       
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Analysis of Variance of Aligned Rank Transformed Data
+
+Table Type: Analysis of Deviance Table (Type III Wald F tests with Kenward-Roger df) 
+Model: Mixed Effects (lmer)
+Response: art(trust_score)
+
+                                             F Df Df.res     Pr(>F)    
+1 Architecture                         357.657  1    276 < 2.22e-16 ***
+2 Explainablity_Condition               94.864  1    276 < 2.22e-16 ***
+3 Architecture:Explainablity_Condition 261.477  1    276 < 2.22e-16 ***
+---
+
+
+Signif. codes:   0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+ contrast                     estimate   SE  df t.ratio p.value
+ Graph,High - Graph,Low          -41.6 9.15 276  -4.553 <0.0001
+ Graph,High - Semantic,High       26.4 9.15 276   2.892  0.0214
+ Graph,High - Semantic,Low       168.9 9.15 276  18.466 <0.0001
+ Graph,Low - Semantic,High        68.1 9.15 276   7.445 <0.0001
+ Graph,Low - Semantic,Low        210.5 9.15 276  23.020 <0.0001
+ Semantic,High - Semantic,Low    142.5 9.15 276  15.575 <0.0001
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 4 estimates 

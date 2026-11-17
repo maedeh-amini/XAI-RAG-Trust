@@ -1,0 +1,4 @@
+"Effect","Eta2_partial","CI","CI_low","CI_high"
+"Architecture",0.564432802103782,0.95,0.505213161839378,1
+"Explainablity_Condition",0.255791818931354,0.95,0.186374778700047,1
+"Architecture:Explainablity_Condition",0.486489828111298,0.95,0.420845537945761,1

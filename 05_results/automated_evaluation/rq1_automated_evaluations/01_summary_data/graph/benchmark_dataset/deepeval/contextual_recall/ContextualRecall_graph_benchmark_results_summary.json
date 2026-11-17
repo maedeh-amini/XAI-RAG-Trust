@@ -1,0 +1,19 @@
+{
+  "summary_banner": "Overall Graph ContextualRecall Evaluation",
+  "hyperparameters": {
+    "model": "RedHatAI/gemma-4-31B-it-FP8-Dynamic",
+    "temperature": 0,
+    "retrieval_k": 5,
+    "pipeline": "Graph RAG",
+    "prompt_template": "Answer the question based only on the provided context, \nwhich includes text chunks and graph relationships from the knowledge graph:\n\n{context}\n\nQuestion: {question}\nAnswer:"
+  },
+ "overall_metrics": {
+    "overall_pass_rate": "98.00%",
+    "total_test_cases": 50,
+    "passed_test_cases": 49,
+    "failed_test_cases": 1,
+    "Average_ContextualRecall": 0.970
+},
+  "detailed_results_json": "E:\\THSI\\Code\\Graph_2\\src\\results\\ContextualRecall_graph_benchmark_results_results.json",
+  "detailed_results_csv": "E:\\THSI\\Code\\Graph_2\\src\\results\\ContextualRecall_graph_benchmark_results_results.csv"
+}

@@ -1,0 +1,122 @@
+{
+    "Semantic_Low_Explainable": {
+        "faithfulness": {
+            "Mean": 78.85,
+            "Median": 100.0,
+            "SD": 29.47,
+            "Min": 0.0,
+            "Max": 100.0
+        },
+        "answer_relevancy": {
+            "Mean": 84.39,
+            "Median": 100.0,
+            "SD": 25.4,
+            "Min": 0.0,
+            "Max": 100.0
+        },
+        "contextual_recall": {
+            "Mean": 66.7,
+            "Median": 75.0,
+            "SD": 36.1,
+            "Min": 0.0,
+            "Max": 100.0
+        },
+        "contextual_precision": {
+            "Mean": 80.51,
+            "Median": 100.0,
+            "SD": 28.53,
+            "Min": 0.0,
+            "Max": 100.0
+        }
+    },
+    "Semantic_High_Explainable": {
+        "faithfulness": {
+            "Mean": 82.08,
+            "Median": 100.0,
+            "SD": 24.3,
+            "Min": 0.0,
+            "Max": 100.0
+        },
+        "answer_relevancy": {
+            "Mean": 82.71,
+            "Median": 100.0,
+            "SD": 23.87,
+            "Min": 0.0,
+            "Max": 100.0
+        },
+        "contextual_recall": {
+            "Mean": 67.57,
+            "Median": 75.0,
+            "SD": 32.74,
+            "Min": 0.0,
+            "Max": 100.0
+        },
+        "contextual_precision": {
+            "Mean": 82.44,
+            "Median": 100.0,
+            "SD": 27.9,
+            "Min": 0.0,
+            "Max": 100.0
+        }
+    },
+    "Graph_Low_Explainable": {
+        "faithfulness": {
+            "Mean": 82.73,
+            "Median": 100.0,
+            "SD": 27.1,
+            "Min": 0.0,
+            "Max": 100.0
+        },
+        "answer_relevancy": {
+            "Mean": 85.75,
+            "Median": 100.0,
+            "SD": 25.46,
+            "Min": 0.0,
+            "Max": 100.0
+        },
+        "contextual_recall": {
+            "Mean": 77.55,
+            "Median": 100.0,
+            "SD": 28.86,
+            "Min": 0.0,
+            "Max": 100.0
+        },
+        "contextual_precision": {
+            "Mean": 83.21,
+            "Median": 100.0,
+            "SD": 26.2,
+            "Min": 0.0,
+            "Max": 100.0
+        }
+    },
+    "Graph_High_Explainable": {
+        "faithfulness": {
+            "Mean": 83.94,
+            "Median": 100.0,
+            "SD": 23.0,
+            "Min": 0.0,
+            "Max": 100.0
+        },
+        "answer_relevancy": {
+            "Mean": 83.79,
+            "Median": 100.0,
+            "SD": 23.4,
+            "Min": 0.0,
+            "Max": 100.0
+        },
+        "contextual_recall": {
+            "Mean": 79.27,
+            "Median": 75.0,
+            "SD": 24.95,
+            "Min": 0.0,
+            "Max": 100.0
+        },
+        "contextual_precision": {
+            "Mean": 86.22,
+            "Median": 100.0,
+            "SD": 22.74,
+            "Min": 0.0,
+            "Max": 100.0
+        }
+    }
+}

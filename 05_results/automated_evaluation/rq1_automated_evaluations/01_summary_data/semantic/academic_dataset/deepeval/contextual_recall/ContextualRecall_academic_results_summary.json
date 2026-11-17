@@ -1,0 +1,19 @@
+{
+  "summary_banner": "Overall Academic ContextualRecall Evaluation - ContextualRecall",
+  "hyperparameters": {
+    "model": "RedHatAI/gemma-4-31B-it-FP8-Dynamic",
+    "temperature": 0,
+    "retrieval_k": 5,
+    "pipeline": "Semantic RAG",
+    "prompt_template": "Answer the question based only on the provided context:\n{context}\n\nQuestion: {question}\nAnswer:"
+  },
+  "overall_metrics": {
+    "overall_pass_rate": "62.00%",
+    "total_test_cases": 50,
+    "passed_test_cases": 31,
+    "failed_test_cases": 19,
+    "Average_ContextualRecall": 0.620
+},
+  "detailed_results_json": "E:\\THSI\\Code\\Semantic_RAG_UniData\\src\\results\\ContextualRecall_academic_results_results.json",
+  "detailed_results_csv": "E:\\THSI\\Code\\Semantic_RAG_UniData\\src\\results\\ContextualRecall_academic_results_results.csv"
+}

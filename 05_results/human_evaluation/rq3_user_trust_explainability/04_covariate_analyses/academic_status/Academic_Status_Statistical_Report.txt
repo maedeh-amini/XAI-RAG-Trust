@@ -1,0 +1,100 @@
+[1] "--- DESCRIPTIVE SUMMARY ---"
+# A tibble: 16 × 7
+   Architecture Explainablity_Condition Academic_Status                         N  Mean Median    SD
+   <fct>        <fct>                   <fct>                               <int> <dbl>  <dbl> <dbl>
+ 1 Graph        High                    Non-student (No prior university e…     1  33.3   33.3  NA  
+ 2 Graph        High                    Non-student (With prior university…    15  82.1   83.3  12.5
+ 3 Graph        High                    Student (cognitive science at Osna…    30  88.3   90.6  11.2
+ 4 Graph        High                    Student (Other discipline or unive…    45  80.8   81.2  14.7
+ 5 Graph        Low                     Non-student (No prior university e…     1  29.2   29.2  NA  
+ 6 Graph        Low                     Non-student (With prior university…    15  82.1   87.5  15.9
+ 7 Graph        Low                     Student (cognitive science at Osna…    30  87.5   89.6  12.5
+ 8 Graph        Low                     Student (Other discipline or unive…    46  78.9   83.3  17.7
+ 9 Semantic     High                    Non-student (No prior university e…     1  43.8   43.8  NA  
+10 Semantic     High                    Non-student (With prior university…    15  77.6   81.2  12.3
+11 Semantic     High                    Student (cognitive science at Osna…    30  81.9   84.4  12.4
+12 Semantic     High                    Student (Other discipline or unive…    46  77.6   81.2  17.6
+13 Semantic     Low                     Non-student (No prior university e…     1  45.8   45.8  NA  
+14 Semantic     Low                     Non-student (With prior university…    15  82.5   89.6  15.6
+15 Semantic     Low                     Student (cognitive science at Osna…    30  77.8   81.2  17.4
+16 Semantic     Low                     Student (Other discipline or unive…    45  76.1   77.1  16.2
+[1] "\n--- 3-WAY ART ANOVA RESULTS ---"
+Analysis of Variance of Aligned Rank Transformed Data
+
+Table Type: Analysis of Deviance Table (Type III Wald F tests with Kenward-Roger df) 
+Model: Mixed Effects (lmer)
+Response: art(human_evaluation_score)
+
+                                                              F Df  Df.res  Pr(>F)  
+1 Architecture                                         1.872305  1 262.089 0.17238  
+2 Explainablity_Condition                              0.046580  1 262.093 0.82929  
+3 Academic_Status                                      3.778029  3  87.604 0.01335 *
+4 Architecture:Explainablity_Condition                 0.007811  1 262.141 0.92964  
+5 Architecture:Academic_Status                         2.099749  3 262.092 0.10065  
+6 Explainablity_Condition:Academic_Status              0.749541  3 262.093 0.52347  
+7 Architecture:Explainablity_Condition:Academic_Status 0.336476  3 262.503 0.79898  
+---
+Signif. codes:   0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] "\n--- EXPLAINABILITY x ACADEMIC STATUS INTERACTION ---"
+ contrast                                                                                                                        
+ (High,Non-student (No prior university experience)) - (High,Non-student (With prior university experience/graduated))           
+ (High,Non-student (No prior university experience)) - High,Student (cognitive science at Osnabrück University)                  
+ (High,Non-student (No prior university experience)) - High,Student (Other discipline or university)                             
+ (High,Non-student (No prior university experience)) - (Low,Non-student (No prior university experience))                        
+ (High,Non-student (No prior university experience)) - (Low,Non-student (With prior university experience/graduated))            
+ (High,Non-student (No prior university experience)) - Low,Student (cognitive science at Osnabrück University)                   
+ (High,Non-student (No prior university experience)) - Low,Student (Other discipline or university)                              
+ (High,Non-student (With prior university experience/graduated)) - High,Student (cognitive science at Osnabrück University)      
+ (High,Non-student (With prior university experience/graduated)) - High,Student (Other discipline or university)                 
+ (High,Non-student (With prior university experience/graduated)) - (Low,Non-student (No prior university experience))            
+ (High,Non-student (With prior university experience/graduated)) - (Low,Non-student (With prior university experience/graduated))
+ (High,Non-student (With prior university experience/graduated)) - Low,Student (cognitive science at Osnabrück University)       
+ (High,Non-student (With prior university experience/graduated)) - Low,Student (Other discipline or university)                  
+ High,Student (cognitive science at Osnabrück University) - High,Student (Other discipline or university)                        
+ High,Student (cognitive science at Osnabrück University) - (Low,Non-student (No prior university experience))                   
+ High,Student (cognitive science at Osnabrück University) - (Low,Non-student (With prior university experience/graduated))       
+ High,Student (cognitive science at Osnabrück University) - Low,Student (cognitive science at Osnabrück University)              
+ High,Student (cognitive science at Osnabrück University) - Low,Student (Other discipline or university)                         
+ High,Student (Other discipline or university) - (Low,Non-student (No prior university experience))                              
+ High,Student (Other discipline or university) - (Low,Non-student (With prior university experience/graduated))                  
+ High,Student (Other discipline or university) - Low,Student (cognitive science at Osnabrück University)                         
+ High,Student (Other discipline or university) - Low,Student (Other discipline or university)                                    
+ (Low,Non-student (No prior university experience)) - (Low,Non-student (With prior university experience/graduated))             
+ (Low,Non-student (No prior university experience)) - Low,Student (cognitive science at Osnabrück University)                    
+ (Low,Non-student (No prior university experience)) - Low,Student (Other discipline or university)                               
+ (Low,Non-student (With prior university experience/graduated)) - Low,Student (cognitive science at Osnabrück University)        
+ (Low,Non-student (With prior university experience/graduated)) - Low,Student (Other discipline or university)                   
+ Low,Student (cognitive science at Osnabrück University) - Low,Student (Other discipline or university)                          
+ estimate   SE  df t.ratio p.value
+  -161.40 84.8 176  -1.904  0.5500
+  -203.25 83.4 176  -2.436  0.2307
+  -167.84 83.0 176  -2.023  0.4695
+     2.00 92.7 262   0.022  1.0000
+  -193.47 84.8 176  -2.282  0.3092
+  -189.05 83.4 176  -2.266  0.3184
+  -158.97 83.0 176  -1.916  0.5418
+   -41.85 26.0 176  -1.613  0.7422
+    -6.44 24.4 176  -0.264  1.0000
+   163.40 84.8 176   1.928  0.5338
+   -32.07 23.9 262  -1.340  0.8827
+   -27.65 26.0 176  -1.065  0.9630
+     2.43 24.4 176   0.099  1.0000
+    35.41 19.3 176   1.835  0.5969
+   205.25 83.4 176   2.460  0.2197
+     9.78 26.0 176   0.377  0.9999
+    14.20 16.9 262   0.839  0.9907
+    44.28 19.3 176   2.295  0.3023
+   169.84 83.0 176   2.047  0.4535
+   -25.62 24.4 176  -1.049  0.9660
+   -21.21 19.3 176  -1.099  0.9563
+     8.87 13.7 262   0.645  0.9982
+  -195.47 84.8 176  -2.306  0.2963
+  -191.05 83.4 176  -2.290  0.3050
+  -160.97 83.0 176  -1.940  0.5253
+     4.42 26.0 176   0.170  1.0000
+    34.49 24.4 176   1.412  0.8507
+    30.08 19.3 176   1.559  0.7739
+
+Results are averaged over the levels of: Architecture 
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 8 estimates 

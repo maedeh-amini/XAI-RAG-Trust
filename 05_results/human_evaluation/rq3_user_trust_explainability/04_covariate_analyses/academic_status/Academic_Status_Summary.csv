@@ -1,0 +1,17 @@
+"Architecture","Explainablity_Condition","Academic_Status","N","Mean","Median","SD"
+"Graph","High","Non-student (No prior university experience)",1,33.3333333333333,33.3333333333333,NA
+"Graph","High","Non-student (With prior university experience/graduated)",15,82.0833333333333,83.3333333333333,12.495038697959
+"Graph","High","Student (cognitive science at Osnabrück University)",30,88.3333333333333,90.625,11.1635943191521
+"Graph","High","Student (Other discipline or university)",45,80.8195847362514,81.25,14.6545435287724
+"Graph","Low","Non-student (No prior university experience)",1,29.1666666666667,29.1666666666667,NA
+"Graph","Low","Non-student (With prior university experience/graduated)",15,82.0833333333333,87.5,15.8818179959708
+"Graph","Low","Student (cognitive science at Osnabrück University)",30,87.4652777777778,89.5833333333333,12.5134127432686
+"Graph","Low","Student (Other discipline or university)",46,78.9432367149758,83.3333333333333,17.6655038406443
+"Semantic","High","Non-student (No prior university experience)",1,43.75,43.75,NA
+"Semantic","High","Non-student (With prior university experience/graduated)",15,77.6388888888889,81.25,12.311743759173
+"Semantic","High","Student (cognitive science at Osnabrück University)",30,81.9065656565657,84.375,12.3537577983198
+"Semantic","High","Student (Other discipline or university)",46,77.5897562582345,81.25,17.5737008961083
+"Semantic","Low","Non-student (No prior university experience)",1,45.8333333333333,45.8333333333333,NA
+"Semantic","Low","Non-student (With prior university experience/graduated)",15,82.5,89.5833333333333,15.6061394105521
+"Semantic","Low","Student (cognitive science at Osnabrück University)",30,77.7777777777778,81.25,17.4332791219863
+"Semantic","Low","Student (Other discipline or university)",45,76.1273448773449,77.0833333333333,16.2356826069451
